@@ -17,6 +17,7 @@ const ContactForm = () => {
         type: 'personal'
       })
     }
+    // eslint-disable-next-line
   }, [contactContext, current]) // Dependencies
 
   const [contact, setContact] = useState({
