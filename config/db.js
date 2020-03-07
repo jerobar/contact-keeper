@@ -9,7 +9,8 @@ const connectDB = async () => {
     await mongoose
     .connect(db, { // Options are to silence deprication warnings
       useNewUrlParser: true,
-      useUnifiedTopology: true
+      useUnifiedTopology: true,
+      useCreateIndex: true
     })
 
     console.log('MongoDB connected...')
